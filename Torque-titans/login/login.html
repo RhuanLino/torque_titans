@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoMec - Login</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #292929;
+      color: #ffffff;
+    }
+    .navbar {
+      margin-bottom: 20px;
+      background-color: #6c110a;
+      color: #6c110a;
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: white !important;
+    }
+    .card {
+      background-color: #333333;
+      border: none;
+    }
+    .card-title, .card-text {
+      color: #ffffff;
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    .btn-login {
+      background-color: #6c110a;
+      color: white;
+    }
+    .btn-login:hover {
+      background-color: #000000;
+      border-color: #000000;
+      color: white !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card mt-5">
+          <div class="card-header text-center">
+            <h3>Login</h3>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="registerEmail">Email</label>
+                <input type="email" class="form-control" id="registerEmail" placeholder="Digite seu e-mail">
+              </div>
+              <div class="form-group">
+                <label for="registerPassword">Senha</label>
+                <input type="password" class="form-control" id="registerPassword" placeholder="Digite sua senha">
+              </div>
+              <button type="button" class="btn btn-block btn-login" onclick="window.location.href='../index.html'">Login</button>
+              <button type="button" class="btn btn-outline-light btn-block btn-register" onclick="window.location.href='Registro.html'">Cadastre-se</button>
+            </form>
+            <form action="../index.html">
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
