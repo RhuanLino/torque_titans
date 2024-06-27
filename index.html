@@ -3,46 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AutoMec - About Us</title>
+  <title>Torque Titans - Home</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
 </head>
+<style>
+  .background {
+    background-image: url('./images/roda_home.jpg');
+    background-size: cover;
+    text-align: start;
+    padding-left: 50px;
+    position: relative; 
+    overflow: hidden;
+    height: 100vh;
+    color: white;
+  }
+
+  .navbar {
+    background-color: #6c110a;
+  }
+
+  .navbar-brand, .navbar-nav .nav-link {
+      color: white !important;
+  }
+</style>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Torque Titans</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="./about/about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="./services/services.html">Services</a></li>
-      </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">Torque Titans</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./services/services.html">Services</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="background">
+    <div class="container mt-5 position-absolute">
+      <h1>Bem-vindo!</h1>
+      <p>O único caminho que promete transformar seu carro em um veículo de ponta, você encontra aqui!</p>
     </div>
-  </nav>
-  <div class="container mt-5">
-    <h1>About Us</h1>
-    <p>Welcome to AutoMec, your reliable partner for all automotive mechanical services.</p>
-    <div class="row">
-      <div class="col-md-6">
-        <img src="images/mechanic1.jpg" class="img-fluid" alt="Mechanic 1">
-      </div>
-      <div class="col-md-6">
-        <img src="images/mechanic2.jpg" class="img-fluid" alt="Mechanic 2">
-      </div>
+  </div>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Carros"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Peças"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Serviços"></button>
     </div>
-    <div class="row mt-3">
-      <div class="col-md-4">
-        <img src="images/mechanic3.jpg" class="img-fluid" alt="Mechanic 3">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/1.jpeg" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Carros</h5>
+          <p>Carros incríveis</p>
+        </div>
       </div>
-      <div class="col-md-4">
-        <img src="images/mechanic4.jpg" class="img-fluid" alt="Mechanic 4">
+      <div class="carousel-item">
+        <img src="images/2.jpeg" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Peças</h5>
+          <p>Peças de qualidade</p>
+        </div>
       </div>
-      <div class="col-md-4">
-        <img src="images/mechanic5.jpg" class="img-fluid" alt="Mechanic 5">
+      <div class="carousel-item">
+        <img src="images/3.jpeg" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Serviços</h5>
+          <p>Nossa equipe sempre está pronta para o serviço</p>
+        </div>
       </div>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="back.js"></script>
 </body>
 </html>
