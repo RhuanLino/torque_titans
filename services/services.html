@@ -3,49 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AutoMec - Services</title>
+  <title>Torque Titans</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="../images/logo_tt.ico" type="image/x-icon">
+  <style>
+    body {
+      background-color:#292929;
+      color: white;
+    }
+    .navbar {
+      margin-bottom: 20px;
+      background-color: #6c110a;
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: white !important;
+    }
+    .modal-content {
+      background-color: #f1f1f1;
+      border-radius: 10px;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+    .table thead th {
+      background-color: #6c110a;
+      color: white;
+    }
+    .table tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">AutoMec</a>
+  <nav class="pl-5 navbar navbar-expand-lg">
+    <img src="/images/logo_ttb.svg" alt="Logo" width="70px">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+      <ul class="pl-3 navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="../home.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="../about/about.html">About</a></li>
       </ul>
     </div>
   </nav>
   <div class="container mt-5">
-    <h1>Our Services</h1>
-    <p>At AutoMec, we offer a wide range of automotive services.</p>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card">
-          <img src="images/service1.jpg" class="card-img-top" alt="Service 1">
-          <div class="card-body">
-            <h5 class="card-title">Service 1</h5>
-            <p class="card-text">Description of service 1.</p>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#serviceModal1">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="images/service2.jpg" class="card-img-top" alt="Service 2">
-          <div class="card-body">
-            <h5 class="card-title">Service 2</h5>
-            <p class="card-text">Description of service 2.</p>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#serviceModal2">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <!-- More cards as needed -->
-    </div>
-
     <!-- Modals -->
     <div class="modal fade" id="serviceModal1" tabindex="-1" aria-labelledby="serviceModalLabel1" aria-hidden="true">
       <div class="modal-dialog">
@@ -85,49 +88,85 @@
       </div>
     </div>
 
-    <h2>Contact Us</h2>
+    <h2>Contate-nos</h2>
     <form>
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="name">Nome</label>
+          <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+        </div>
       </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="phone">Telefone</label>
+          <input type="text" class="form-control" id="phone" placeholder="Digite seu número de telefone">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="message">Mensagem</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Digite sua mensagem"></textarea>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="phone">Phone</label>
-        <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-      <button type="reset" class="btn btn-secondary">Reset</button>
+      <button style="background-color: #6c110a;" type="submit" class="btn" onclick="{alert('Mensagem enviada. Obrigado!')}">Enviar</button>
+      <button type="reset" class="btn btn-secondary">Reiniciar</button>
     </form>
 
-    <h2 class="mt-5">Service Table</h2>
-    <table class="table table-bordered">
+    <h2 class="mt-5">Tabela de serviço</h2>
+    <table style="background-color: white;" class="table table-bordered">
       <thead>
         <tr>
-          <th>Service</th>
-          <th>Description</th>
-          <th>Price</th>
+          <th>serviço</th>
+          <th>Descrição</th>
+          <th>Preço</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Oil Change</td>
-          <td>Complete oil change and filter replacement.</td>
+          <td>Mecânica Geral</td>
+          <td>Manutenção e reparos gerais.</td>
           <td>$50</td>
         </tr>
         <tr>
-          <td>Brake Inspection</td>
-          <td>Comprehensive brake system check.</td>
+          <td>Suspensão</td>
+          <td>Reparos e ajustes na suspensão.</td>
           <td>$30</td>
         </tr>
-        <!-- More rows as needed -->
+        <tr>
+          <td>Freio</td>
+          <td>Inspeção e reparo do sistema de freios.</td>
+          <td>$25</td>
+        </tr>
+        <tr>
+          <td>Injeção Eletrônica</td>
+          <td>Diagnóstico e reparo do sistema de injeção eletrônica.</td>
+          <td>$20</td>
+        </tr>
+        <tr>
+          <td>Direção Hidráulica</td>
+          <td>Manutenção e reparo da direção hidráulica.</td>
+          <td>$60</td>
+        </tr>
+        <tr>
+          <td>Airbags</td>
+          <td>Inspeção e substituição de airbags.</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Manutenção preventiva</td>
+          <td>Troca de óleo e filtro, revisão de fluidos, verificação e ajuste de pressão dos pneus</td>
+          <td>$200</td>
+        </tr><tr>
+          <td>Ar condicionado</td>
+          <td>Recarga de gás refrigerante, substituição de compressores, condensadores e evaporadores, reparo de vazamentos no sistema de ar condicionado</td>
+          <td>$100</td>
+        </tr><tr>
+          <td>Certificação de segurança</td>
+          <td>Inspeção de segurança veicular, certificação para sistemas de emissão de poluentes, inspeções pré-compra</td>
+          <td>$125</td>
+        </tr>
       </tbody>
     </table>
   </div>

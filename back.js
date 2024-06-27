@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Inicializa o carrossel
     var myCarousel = document.querySelector('#carouselExampleIndicators');
     var carousel = new bootstrap.Carousel(myCarousel, {
-      interval: 2000, // Tempo em milissegundos para trocar de slide automaticamente
+      interval: 3000, // Tempo em milissegundos para trocar de slide automaticamente
       ride: 'carousel'
     });
   
@@ -13,10 +13,13 @@ document.addEventListener('DOMContentLoaded', function () {
   
     // Exemplo de como parar e iniciar o carrossel programaticamente
     document.querySelector('#carouselExampleIndicators').addEventListener('mouseover', function () {
-      carousel.pause();
+      carousel.cycle();
     });
     document.querySelector('#carouselExampleIndicators').addEventListener('mouseout', function () {
-      carousel.cycle();
+      carousel.pause();
     });
   });
   
+
+//Login
+
