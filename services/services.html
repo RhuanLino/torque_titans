@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoMec - Services</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">AutoMec</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../about/about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <h1>Our Services</h1>
+    <p>At AutoMec, we offer a wide range of automotive services.</p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="images/service1.jpg" class="card-img-top" alt="Service 1">
+          <div class="card-body">
+            <h5 class="card-title">Service 1</h5>
+            <p class="card-text">Description of service 1.</p>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#serviceModal1">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="images/service2.jpg" class="card-img-top" alt="Service 2">
+          <div class="card-body">
+            <h5 class="card-title">Service 2</h5>
+            <p class="card-text">Description of service 2.</p>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#serviceModal2">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- More cards as needed -->
+    </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="serviceModal1" tabindex="-1" aria-labelledby="serviceModalLabel1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="serviceModalLabel1">Service 1</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            More details about service 1.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="serviceModal2" tabindex="-1" aria-labelledby="serviceModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="serviceModalLabel2">Service 2</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            More details about service 2.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Contact Us</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="reset" class="btn btn-secondary">Reset</button>
+    </form>
+
+    <h2 class="mt-5">Service Table</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Oil Change</td>
+          <td>Complete oil change and filter replacement.</td>
+          <td>$50</td>
+        </tr>
+        <tr>
+          <td>Brake Inspection</td>
+          <td>Comprehensive brake system check.</td>
+          <td>$30</td>
+        </tr>
+        <!-- More rows as needed -->
+      </tbody>
+    </table>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
